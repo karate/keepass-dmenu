@@ -16,4 +16,6 @@ Requirements:
 Usage:
 Assing a keyboard shortcut to run this script.
 
-[Video demonstration](keepass_dmenu.webm)
+
+Click below for a demo:
+[![Watch a demo](https://raw.githubusercontent.com/karate/keepass-dmenu/master/screenshot.png)](https://github.com/karate/keepass-dmenu/blob/master/keepass_dmenu.webm?raw=true)
