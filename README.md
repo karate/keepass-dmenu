@@ -16,4 +16,4 @@ Requirements:
 Usage:
 Assing a keyboard shortcut to run this script.
 
-[Video demonstration](keepass_dmenu.mp4)
+[Video demonstration](keepass_dmenu.webm)
