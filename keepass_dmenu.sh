@@ -71,4 +71,6 @@ while [[ $ENTRY = *\/ ]]; do
 done
 
 # When a leaf entry is selected, copy the password
-get_pass $ENTRY
+if [[ ! -z $ENTRY ]]; then
+	get_pass $ENTRY
+fi
