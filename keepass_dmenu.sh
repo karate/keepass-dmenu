@@ -39,14 +39,14 @@ TIMEOUT=5
 # Get all entries and pass them to dmenu, to allow the user to select one
 function show_entries {
 	if [[ ! -z "$1" ]]; then
-	  # Trim tailing slash
-    INPUT="${1/\//}"
+		# Trim tailing slash
+		INPUT="${1/\//}"
 		# Append to existing string
 		SELECTED_ENTRY=$SELECTED_ENTRY/$INPUT
 	fi
-  
+	
 	# Get entries
-  ENTRY=$(keepassxc-cli ls -k $KEY_FILE $DB_FILE $SELECTED_ENTRY --no-password | dmenu -l 10)
+	ENTRY=$(keepassxc-cli ls -k $KEY_FILE $DB_FILE $SELECTED_ENTRY --no-password | dmenu -l 10)
 }
 
 # Get the password for the selected entry
@@ -67,7 +67,7 @@ show_entries
 
 # If $ENTRY ends in /, show child entries
 while [[ $ENTRY = *\/ ]]; do
-  show_entries $ENTRY
+	show_entries $ENTRY
 done
 
 # When a leaf entry is selected, copy the password
