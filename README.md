@@ -5,7 +5,7 @@ The password for the selected entry is then copied to the clipboard, and
 stays there for a specified ammount of time. After that it's being deleted
 
 The script assumes that you only use a key file and not a password. If you
-use a password (and you should), just remove the --no-password switch, and
+use a password (and you should), just remove the `--no-password` switch, and
 let gnome-keyring or kdewallet do their stuff
 
 Requirements:
